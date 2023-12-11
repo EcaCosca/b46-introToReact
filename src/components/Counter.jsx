@@ -13,7 +13,11 @@ const Counter = ({student = "student", batch = 46, location = "unknown"}) => {
   return (
     <div>
         <h2>Counter of {student} from batch {batch}</h2>
-        <Location location={location}/>
+
+        {/* CONDITIONAL RENDERING */}
+        {/* { location !== "unknown" ? <Location location={location}/> : null} */}
+        { location !== "unknown" && <Location location={location}/>}
+
         <h3>Count is {count}</h3>
         <div className="card">
             <button onClick={handleAdd}>
