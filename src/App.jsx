@@ -71,9 +71,9 @@ function App() {
       <Counter/> */}
 
       <form onSubmit={handleSubmit}>
-        <input onChange={handleChange} type="text" placeholder="name" name="name"/>
-        <input onChange={handleChange} type="number" placeholder="batch" name="batch"/>
-        <input onChange={handleChange} type="text" placeholder="location" name="location"/>
+        <input onChange={handleChange} type="text" placeholder="Name" name="name"/><br/>
+        <input onChange={handleChange} type="number" placeholder="Batch" name="batch"/><br/>
+        <input onChange={handleChange} type="text" placeholder="Location" name="location"/><br/>
         <button type="submit">Add Student</button>
       </form>
 
