@@ -8,9 +8,11 @@ function App() {
   return (
     <>
       <h1>Batch 46</h1>
-      <Counter />
-      <Counter />
-      <Counter />
+      <Counter student="Nestor" batch={47} location="Berlin"/>
+      <Counter student="Subaru" location="Berlin"/>
+      <Counter student="Tania" batch={46} location="Berlin"/>
+      <Counter student="Bediz" batch={46} location="Turkey"/>
+      <Counter/>
     </>
   )
 }

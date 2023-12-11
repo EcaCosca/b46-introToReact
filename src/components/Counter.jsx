@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
+import Location from './Location'
 
-const Counter = () => {
+const Counter = ({student = "student", batch = 46, location = "unknown"}) => {
     const [count, setCount] = useState(0)
 
     const handleAdd = () => setCount((prevCount) => prevCount + 1)
@@ -11,6 +12,8 @@ const Counter = () => {
 
   return (
     <div>
+        <h2>Counter of {student} from batch {batch}</h2>
+        <Location location={location}/>
         <h3>Count is {count}</h3>
         <div className="card">
             <button onClick={handleAdd}>
